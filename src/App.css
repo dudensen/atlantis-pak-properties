@@ -14,19 +14,20 @@ body {
 }
 
 .site-header {
-  height: 120px;
+  height: 125px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 20px;
 }
 
-.site-header h1 {
-  margin: 0;
-  font-size: 46px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  color: #10223e;
+.site-logo {
+  display: block;
+  width: min(360px, 100%);
+  max-height: 108px;
+  height: auto;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -69,7 +70,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  max-height: calc(100vh - 181px);
+  max-height: calc(100vh - 186px);
   object-fit: cover;
   object-position: center;
 }
@@ -77,13 +78,13 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .site-header {
-    height: auto;
-    padding: 28px 20px;
+    height: 110px;
+    padding: 8px 16px;
   }
 
-  .site-header h1 {
-    text-align: center;
-    font-size: 34px;
+  .site-logo {
+    width: min(300px, 100%);
+    max-height: 94px;
   }
 
   .main-nav {

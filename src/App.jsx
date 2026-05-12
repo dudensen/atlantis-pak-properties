@@ -1,13 +1,17 @@
 import { NavLink, Route, Routes } from "react-router";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PolicyPage from "./pages/PolicyPage";
 import "./App.css";
 
 function Header() {
   return (
     <>
       <header className="site-header">
-        <h1>Atlantis Pak Properties</h1>
-      </header>
+  <img
+    src="/images/atlantis-pak-properties-logo.png"
+    alt="Atlantis Pak Properties"
+    className="site-logo"
+  />
+</header>
 
       <nav className="main-nav">
         <div className="nav-inner">
@@ -58,7 +62,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PolicyPage />} />
       </Routes>
     </div>
   );

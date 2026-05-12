@@ -9,7 +9,7 @@ function Section({ title, children }) {
   );
 }
 
-export default function PrivacyPolicy() {
+export default function PolicyPage() {
   return (
     <main className="policy-page">
       <article className="policy-card">
